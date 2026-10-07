@@ -37,7 +37,7 @@ groups, EC2 and RDS in private subnets, EKS, load balancers and Auto Scaling Gro
 CloudWatch-driven policies — and configured with Ansible, including pre-deploy backup and a rollback
 that restores rather than just logging.
 
-**Pipelines that finish the job.** Build, test, scan, provision, deploy, in that order because it
+**From commit to running system.** Build, test, scan, provision, deploy, in that order because it
 costs least to fail early. The goal is simple: nobody opens an SSH session to release.
 
 Most of my work lives on GitLab, including a self-hosted instance at work. The repositories here are
