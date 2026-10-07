@@ -95,9 +95,11 @@ published copies, so the pipelines defined in them run elsewhere.
 
 ### Certifications
 
-**AWS Cloud Technical Essentials** — Amazon Web Services ·
-**Infrastructure Automation with Terraform** — Whizlabs ·
-**Scrum Fundamentals Certified** — ScrumStudy
+| Certification | Issuer | Date | |
+|---|---|---|---|
+| AWS Cloud Technical Essentials | Amazon Web Services | Apr 2025 | [verify](https://www.coursera.org/account/accomplishments/verify/WH624O3VIDEJ) |
+| Infrastructure Automation with Terraform | Whizlabs | May 2025 | [verify](https://www.coursera.org/account/accomplishments/verify/PV0CP1FHKUNL) |
+| Scrum Fundamentals Certified (SFC) | ScrumStudy | — | [verify](https://www.scrumstudy.com/certification/verify?type=SFC&number=1064741) |
 
 ---
 
