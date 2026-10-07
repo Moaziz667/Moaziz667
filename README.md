@@ -22,13 +22,26 @@
 
 ### What I work on
 
-Multi-tenant backends, service-to-service authentication, and the unglamorous parts around them —
-schema isolation, idempotent replay, transactional outbox, rollback that actually restores something.
-On the infrastructure side: Terraform, Ansible, and pipelines that go from a commit to a running
-system without anyone opening an SSH session.
+**Multi-tenant backends.** Schema-per-tenant isolation, OAuth 2.0 and OpenID Connect through
+Keycloak enforced at the service layer rather than only at the gateway, declarative RBAC that fails
+closed, and a transactional outbox so a business change and its event can't disagree.
+
+**Offline-first mobile.** Delivery drivers lose signal in basements and stairwells, so their app
+writes to a local queue first and replays it on reconnect — timestamped at the moment of the gesture,
+not the moment of upload, and idempotent on the server so a lost acknowledgement can't charge a
+customer twice.
+
+**Containers and AWS.** Everything ships as Docker images pinned to a commit SHA, so the server runs
+exactly the artifact that was tested. Infrastructure is declared in Terraform — VPCs, security
+groups, EC2 and RDS in private subnets, EKS, load balancers and Auto Scaling Groups with
+CloudWatch-driven policies — and configured with Ansible, including pre-deploy backup and a rollback
+that restores rather than just logging.
+
+**Pipelines that finish the job.** Build, test, scan, provision, deploy, in that order because it
+costs least to fail early. The goal is simple: nobody opens an SSH session to release.
 
 Most of my work lives on GitLab, including a self-hosted instance at work. The repositories here are
-published copies, so the pipelines you see defined in them run elsewhere.
+published copies, so the pipelines defined in them run elsewhere.
 
 ---
 
